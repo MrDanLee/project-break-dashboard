@@ -218,10 +218,16 @@ body {
   font-size: 18px;
 }
 
+.menu-section a,
+.menu-section img {
+  pointer-events: auto;
+}
+
 .menu-section {
   position: fixed;
   z-index: 999;
   color: aliceblue;
+  pointer-events: none;
   top: 0;
   bottom: 0;
   left: 0;
@@ -275,4 +281,77 @@ body {
   width: 100%;
   border: 1px solid white;
   height: 0px;
+}
+
+
+.links-app {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  width: auto;
+}
+
+.links-title {
+  color: aliceblue;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.link-form {
+  display: flex;
+  gap: 8px;
+}
+
+.link-form input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-family: inherit;
+}
+
+.link-form button {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  font-weight: 600;
+}
+
+.links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.link-item a {
+  color: #7dd3fc;
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+}
+
+.link-item button {
+  background: none;
+  border: none;
+  color: #f87171;
+  cursor: pointer;
+  font-size: 16px;
 }
