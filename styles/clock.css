@@ -90,7 +90,7 @@ body {
 
 
 .clock-container {
-  background-color: rgba(40, 38, 38, 0.675);
+  /* background-color: rgba(40, 38, 38, 0.675);
   color: rgb(250, 233, 233);
   /* position: absolute;   */
   display: flex;
@@ -102,13 +102,26 @@ body {
   border-radius: 20px;
   padding: 12px;
   width: auto;
-  height: 130px;
+  height: 130px; 
+  /* ------------ */
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  max-width: 350px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  margin: auto; 
 }
 
 .time-container {
   display: flex;
   align-items: center;
   flex-flow: column;
+  /* ---- */
 }
 
 .clock-text {
@@ -116,7 +129,7 @@ body {
 }
 
 .clock {
-  font-size: 45px;
+  font-size: 40px;
   /* top: 0;
   left: 0;
   bottom: 0;
@@ -124,15 +137,16 @@ body {
 }
 
 .date {
-  font-size: 18tpx;
+  font-size: 16tpx;
 }
 
 .time-text {
-  font-size: 18px;
+  font-size: 16px;
 } 
 
 .menu-section {
   position: fixed;
+  pointer-events: none;
   z-index: 999;
   color: aliceblue;
   top: 0;
