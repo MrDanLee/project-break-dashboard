@@ -155,6 +155,11 @@ body {
   right: 0;
 }
 
+.menu-section a,
+.menu-section img {
+  pointer-events: auto;
+}
+
 .menu-canvas {
   height: 100%;
   display: flex;
