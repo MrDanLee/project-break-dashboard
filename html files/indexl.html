@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/project-break-dashboard/styles/index.css">
+  <link rel="stylesheet" href="/project-break-dashboard/styles/clock.css">
+  <link rel="stylesheet" href="/project-break-dashboard/styles/weather.css">
+  <link rel="stylesheet" href="/project-break-dashboard/styles/links.css">
+  <link rel="stylesheet" href="/project-break-dashboard/styles/password.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -17,9 +21,14 @@
   <section class="dashboard">
   
     <!-- WEATHER -->
-    <div class="weather-app">
-      <h2>Clima en Madrid</h2>
-      <div id="weather-display">Cargando clima…</div>
+    <div class="info-container" id="info-container">
+      <div class="weather-app">
+        <h2 class="weather-title">Clima en Madrid</h2>
+    
+        <div id="weather-display" class="weather-display">
+          <p>Cargando...</p>
+        </div>
+      </div>
     </div>
   
     <!-- CLOCK -->
@@ -31,16 +40,20 @@
     </div>
   
     <!-- LINKS -->
-    <div class="links-app">
-      <h2>Links dinámicos</h2>
-  
-      <form id="link-form">
-        <input id="link-name" placeholder="Nombre" required />
-        <input id="link-url" type="url" placeholder="https://…" required />
-        <button>Añadir</button>
-      </form>
-  
-      <ul id="links-list"></ul>
+    <div class="info-container" id="info-container">
+      <div class="links-app">
+        <h2 class="links-title">Links dinámicos</h2>
+    
+        <form id="link-form" class="link-form">
+          <input type="text" id="link-name" placeholder="Nombre del enlace" required />
+          <input type="url" id="link-url" placeholder="https://ejemplo.com" required />
+          <button type="submit">Añadir</button>
+        </form>
+    
+        <ul id="links-list" class="links-list"></ul>
+      </div>
+    
+      <div id="time-text" class="time-text"></div>
     </div>
   
     <!-- PASSWORD -->
