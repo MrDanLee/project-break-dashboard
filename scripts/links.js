@@ -1,11 +1,10 @@
-const form = document.getElementById("link-form");
-const nameInput = document.getElementById("link-name");
-const urlInput = document.getElementById("link-url");
-const list = document.getElementById("links-list");
+const form = document.getElementById("link-form"),
+      nameInput = document.getElementById("link-name"),
+      urlInput = document.getElementById("link-url"),
+      list = document.getElementById("links-list")
 
 let links = JSON.parse(localStorage.getItem("links")) || [];
 
-// Render inicial
 renderLinks();
 
 form.addEventListener("submit", (e) => {

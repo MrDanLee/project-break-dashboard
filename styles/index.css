@@ -177,7 +177,7 @@ body {
 
 
 .clock-container {
-  background-color: rgba(40, 38, 38, 0.675);
+  /* background-color: rgba(40, 38, 38, 0.675);
   color: rgb(250, 233, 233);
   /* position: absolute;   */
   display: flex;
@@ -189,13 +189,26 @@ body {
   border-radius: 20px;
   padding: 12px;
   width: auto;
-  height: 130px;
+  height: auto;
+  /* ------------ */
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  max-width: 350px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  margin: auto;
 }
 
 .time-container {
   display: flex;
   align-items: center;
   flex-flow: column;
+  /* ---- */
 }
 
 .clock-text {
@@ -203,7 +216,7 @@ body {
 }
 
 .clock {
-  font-size: 45px;
+  font-size: 40px;
   /* top: 0;
   left: 0;
   bottom: 0;
@@ -211,21 +224,27 @@ body {
 }
 
 .date {
-  font-size: 18tpx;
+  font-size: 16tpx;
 }
 
 .time-text {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .menu-section {
   position: fixed;
+  pointer-events: none;
   z-index: 999;
   color: aliceblue;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+.menu-section a,
+.menu-section img {
+  pointer-events: auto;
 }
 
 .menu-canvas {
@@ -276,3 +295,219 @@ body {
   border: 1px solid white;
   height: 0px;
 }
+
+ *{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: "Poppins", sans-serif;
+ }
+
+ body {
+   min-height: 100vh;
+   background: url("https://cdn.esahubble.org/archives/images/screen/heic1509a.jpg") center / cover no-repeat;
+   color: white;
+ }
+
+ .dashboard {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+   gap: 20px;
+   padding: 20px;
+ }
+
+
+ .links-app,
+ .password-generator {
+   background: rgba(0, 0, 0, 0.65);
+   border-radius: 16px;
+   padding: 16px;
+ }
+
+ h2 {
+   margin-bottom: 10px;
+ }
+
+ .clock {
+   font-size: 48px;
+ }
+
+ .date {
+   font-size: 16px;
+ }
+
+ .time-text {
+   margin-top: 10px;
+   font-size: 14px;
+   opacity: 0.8;
+ }
+
+ #links-list {
+   margin-top: 10px;
+ }
+
+ #links-list li {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 6px;
+ }
+
+ button {
+   cursor: pointer;
+ }
+
+ .links-app {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   padding: 24px;
+   border-radius: 20px;
+   background: rgba(255, 255, 255, 0.08);
+   backdrop-filter: blur(12px);
+   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+   width: auto;
+ }
+
+ .links-title {
+   color: aliceblue;
+   text-align: center;
+   font-weight: 600;
+   letter-spacing: 1px;
+ }
+
+ .link-form {
+   display: flex;
+   gap: 8px;
+ }
+
+ .link-form input {
+   flex: 1;
+   padding: 10px;
+   border-radius: 10px;
+   border: none;
+   background: rgba(0, 0, 0, 0.4);
+   color: white;
+   font-family: inherit;
+ }
+
+ .link-form button {
+   padding: 10px 14px;
+   border-radius: 10px;
+   border: none;
+   cursor: pointer;
+   background: linear-gradient(135deg, #38bdf8, #6366f1);
+   font-weight: 600;
+ }
+
+ .links-list {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+ }
+
+ .link-item {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 12px;
+   border-radius: 12px;
+   background: rgba(0, 0, 0, 0.5);
+ }
+
+ .link-item a {
+   color: #7dd3fc;
+   text-decoration: none;
+   font-family: "Roboto Mono", monospace;
+ }
+
+ .link-item button {
+   background: none;
+   border: none;
+   color: #f87171;
+   cursor: pointer;
+   font-size: 16px;
+ }
+
+ .password-generator {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   padding: 24px;
+   border-radius: 20px;
+   background: rgba(220, 189, 189, 0.08);
+   backdrop-filter: blur(12px);
+   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+   min-width: 280px;
+ }
+
+ .password-generator button {
+   border: none;
+   border-radius: 5px;
+   background-color: #132e6b92;
+   color: aliceblue;
+   height: 25px;
+ }
+
+ .password-generator input {
+   background: transparent;
+   border: none;
+   outline: none;
+   color: white;
+   font-family: "Roboto Mono", monospace;
+   font-size: 16px;
+   width: 60px;
+   padding: 0;
+ }
+
+ .weather-app {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   padding: 24px;
+   border-radius: 20px;
+   background: rgba(255, 255, 255, 0.08);
+   backdrop-filter: blur(12px);
+   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+   max-width: 350px;
+   font-family: "Poppins", sans-serif;
+   color: white;
+   margin: auto;
+ }
+
+ .weather-title {
+   text-align: center;
+   font-weight: 600;
+   letter-spacing: 1px;
+ }
+
+ .weather-display {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 12px;
+   padding: 16px;
+   border-radius: 12px;
+   background: rgba(0, 0, 0, 0.5);
+   text-align: center;
+   min-height: 150px;
+ }
+
+ .weather-display img {
+   width: 80px;
+   height: 80px;
+   animation: float 2s ease-in-out infinite alternate;
+ }
+
+ @keyframes float {
+   0% {
+     transform: translateY(0);
+   }
+
+   100% {
+     transform: translateY(-10px);
+   }
+ }
+
+ .weather-display p {
+   margin: 4px 0;
+ }

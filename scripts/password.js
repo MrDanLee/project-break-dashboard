@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const generateButton = document.getElementById("generate");
   const result = document.getElementById("result");
+  
 
   function generarContrasena({
     longitud = 12,

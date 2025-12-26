@@ -14,6 +14,56 @@
 </head>
 
 <body>
+  <section class="dashboard">
+  
+    <!-- WEATHER -->
+    <div class="weather-app">
+      <h2>Clima en Madrid</h2>
+      <div id="weather-display">Cargando clima…</div>
+    </div>
+  
+    <!-- CLOCK -->
+    <div class="clock-container">
+      <div class="clock-text">Son las…</div>
+      <div id="clock" class="clock"></div>
+      <div id="date" class="date"></div>
+      <div id="time-text" class="time-text"></div>
+    </div>
+  
+    <!-- LINKS -->
+    <div class="links-app">
+      <h2>Links dinámicos</h2>
+  
+      <form id="link-form">
+        <input id="link-name" placeholder="Nombre" required />
+        <input id="link-url" type="url" placeholder="https://…" required />
+        <button>Añadir</button>
+      </form>
+  
+      <ul id="links-list"></ul>
+    </div>
+  
+    <!-- PASSWORD -->
+    <div class="password-generator">
+      <h2>Password Generator</h2>
+  
+      <label>Longitud
+        <input id="length" type="number" min="4" max="50" value="12" />
+      </label>
+  
+      <label><input id="uppercase" type="checkbox" checked /> Mayúsculas</label>
+      <label><input id="lowercase" type="checkbox" checked /> Minúsculas</label>
+      <label><input id="numbers" type="checkbox" checked /> Números</label>
+      <label><input id="symbols" type="checkbox" checked /> Símbolos</label>
+  
+      <button id="generate">Generar</button>
+  
+      <div class="result-box">
+        <span id="result">— — — —</span>
+      </div>
+    </div>
+  
+  </section>
   <section class="menu-section">
     <div class="menu-canvas">
       <div class="home-menu">
@@ -52,6 +102,6 @@
       </div>
     </div>
   </section>
-  <script src="/scripts/index.js"></script>
+  <script src="/project-break-dashboard/scripts/index.js"></script>
 </body>
 </html>

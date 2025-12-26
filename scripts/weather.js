@@ -1,6 +1,6 @@
-const apiKey = "4bc4e481b5bbec535f8c350ea310c137";
-const city = "Madrid"; // Cambia la ciudad si quieres
-const display = document.getElementById("weather-display");
+const apiKey = "4bc4e481b5bbec535f8c350ea310c137",
+      city = "Madrid",
+      display = document.getElementById("weather-display");
 
 async function fetchWeather(city) {
   try {
@@ -25,5 +25,4 @@ function showWeather(data) {
   `;
 }
 
-// Ejecutar al cargar la página
 fetchWeather(city);
