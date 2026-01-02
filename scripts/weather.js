@@ -1,3 +1,4 @@
+import "./background.js";
 const apiKey = "4bc4e481b5bbec535f8c350ea310c137",
       city = "Madrid",
       display = document.getElementById("weather-display");

@@ -1,3 +1,4 @@
+import "./background.js";
 console.log('funciona')
 
 const clock = document.getElementById('clock'),

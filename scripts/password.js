@@ -1,3 +1,4 @@
+import "./background.js";
 document.addEventListener("DOMContentLoaded", () => {
   const generateButton = document.getElementById("generate");
   const result = document.getElementById("result");

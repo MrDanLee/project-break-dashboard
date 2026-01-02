@@ -1,3 +1,4 @@
+import "./background.js";
 const form = document.getElementById("link-form"),
       nameInput = document.getElementById("link-name"),
       urlInput = document.getElementById("link-url"),

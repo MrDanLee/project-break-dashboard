@@ -147,11 +147,21 @@ table {
   border-spacing: 0;
 }
 
-/* -------------------------------------------------------- */
+/* -----------------------------Reset CSS--------------------------- */
+
+#bg-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
 
 body {
   font-family: "Poppins", sans-serif;
-  background-image: url('https://cdn.esahubble.org/archives/images/screen/heic1509a.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
