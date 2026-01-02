@@ -19,62 +19,65 @@
 
 <body>
   <section class="dashboard">
-  
-    <!-- WEATHER -->
-    <div class="info-container" id="info-container">
-      <div class="weather-app">
-        <h2 class="weather-title">Clima en Madrid</h2>
+    <div class="apps-container">
+
+      <!-- WEATHER -->
+      <div class="info-container" id="info-container">
+        <div class="weather-app">
+          <h2 class="weather-title">Clima en Madrid</h2>
+      
+          <div id="weather-display" class="weather-display">
+            <p>Cargando...</p>
+          </div>
+        </div>
+      </div>
     
-        <div id="weather-display" class="weather-display">
-          <p>Cargando...</p>
+      <!-- CLOCK -->
+      <div class="clock-container">
+        <div class="clock-text">Son las…</div>
+        <div id="clock" class="clock"></div>
+        <div id="date" class="date"></div>
+        <div id="time-text" class="time-text"></div>
+      </div>
+    
+      <!-- LINKS -->
+      <div class="info-container" id="info-container">
+        <div class="links-app">
+          <h2 class="links-title">Links dinámicos</h2>
+      
+          <form id="link-form" class="link-form">
+            <input type="text" id="link-name" placeholder="Nombre del enlace" required />
+            <input type="url" id="link-url" placeholder="https://ejemplo.com" required />
+            <button type="submit">Añadir</button>
+          </form>
+      
+          <ul id="links-list" class="links-list"></ul>
+        </div>
+      
+        <div id="time-text" class="time-text"></div>
+      </div>
+    
+      <!-- PASSWORD -->
+      <div class="password-generator">
+        <h2>Password Generator</h2>
+    
+        <label>Longitud
+          <input id="length" type="number" min="4" max="50" value="12" />
+        </label>
+    
+        <label><input id="uppercase" type="checkbox" checked /> Mayúsculas</label>
+        <label><input id="lowercase" type="checkbox" checked /> Minúsculas</label>
+        <label><input id="numbers" type="checkbox" checked /> Números</label>
+        <label><input id="symbols" type="checkbox" checked /> Símbolos</label>
+    
+        <button id="generate">Generar</button>
+    
+        <div class="result-box">
+          <span id="result">— — — —</span>
         </div>
       </div>
     </div>
   
-    <!-- CLOCK -->
-    <div class="clock-container">
-      <div class="clock-text">Son las…</div>
-      <div id="clock" class="clock"></div>
-      <div id="date" class="date"></div>
-      <div id="time-text" class="time-text"></div>
-    </div>
-  
-    <!-- LINKS -->
-    <div class="info-container" id="info-container">
-      <div class="links-app">
-        <h2 class="links-title">Links dinámicos</h2>
-    
-        <form id="link-form" class="link-form">
-          <input type="text" id="link-name" placeholder="Nombre del enlace" required />
-          <input type="url" id="link-url" placeholder="https://ejemplo.com" required />
-          <button type="submit">Añadir</button>
-        </form>
-    
-        <ul id="links-list" class="links-list"></ul>
-      </div>
-    
-      <div id="time-text" class="time-text"></div>
-    </div>
-  
-    <!-- PASSWORD -->
-    <div class="password-generator">
-      <h2>Password Generator</h2>
-  
-      <label>Longitud
-        <input id="length" type="number" min="4" max="50" value="12" />
-      </label>
-  
-      <label><input id="uppercase" type="checkbox" checked /> Mayúsculas</label>
-      <label><input id="lowercase" type="checkbox" checked /> Minúsculas</label>
-      <label><input id="numbers" type="checkbox" checked /> Números</label>
-      <label><input id="symbols" type="checkbox" checked /> Símbolos</label>
-  
-      <button id="generate">Generar</button>
-  
-      <div class="result-box">
-        <span id="result">— — — —</span>
-      </div>
-    </div>
   
   </section>
   <section class="menu-section">
