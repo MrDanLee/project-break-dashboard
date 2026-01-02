@@ -250,8 +250,9 @@ body {
 
  body {
    min-height: 100vh;
-   background: url("https://cdn.esahubble.org/archives/images/screen/heic1509a.jpg") center / cover no-repeat;
+   /* background: url("https://cdn.esahubble.org/archives/images/screen/heic1509a.jpg") center / cover no-repeat; */
    color: white;
+   background-color: black
  }
 
  .dashboard {
