@@ -8,7 +8,7 @@ function renderText (time) {
   const timeText = document.getElementById('time-text')
   const timeString = time
 
-  if (timeString < "07:00:00" && timeString >= "00:01:00" ) {
+  if (timeString < "07:00:00" && timeString >= "00:00:00" ) {
     timeText.textContent = "Es hora de descansar. Apaga y sigue mañana"
   } else if (timeString < "12:00:00" && timeString >= "07:01:00") {
     timeText.textContent = "Buenos días, desayuna fuerte y a darle al código"
@@ -20,7 +20,7 @@ function renderText (time) {
     timeText.textContent = "Buenas tardes, el último empujón"
   } else if (timeString < "22:00:00" && timeString >= "18:01:00") {
     timeText.textContent = "Esto ya son horas extras, ... piensa en parar pronto"
-  } else if (timeString < "00:00:00" && timeString >= "22:01:00") {
+  } else if (timeString < "22:59:59" && timeString >= "22:01:00") {
     timeText.textContent = "Buenas noches, es hora de pensar en parar y descansar"
   }
 }
