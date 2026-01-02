@@ -241,36 +241,50 @@ body {
   height: 0px;
 }
 
- *{
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   font-family: "Poppins", sans-serif;
- }
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
 
- body {
-   min-height: 100vh;
-   /* background: url("https://cdn.esahubble.org/archives/images/screen/heic1509a.jpg") center / cover no-repeat; */
-   color: white;
-   background-color: black
- }
+body {
+  min-height: 100vh;
+  /* background: url("https://cdn.esahubble.org/archives/images/screen/heic1509a.jpg") center / cover no-repeat; */
+  color: white;
+  background-color: black
+}
 
- .dashboard {
-   /* display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); */
-   top: 0;
-   left: 0;
-   right: 0;
-   bottom: 0;
+.dashboard {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 
- }
+}
 
- .apps-container {
+.apps-container {
   display: flex;
-  justify-content:center;
   flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
- }
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 
+.dashboard .weather-app,
+.dashboard .password-generator,
+.dashboard .clock-container {
+  min-height: 260px;
+  flex: 1 1 280px;
+  max-width: 360px;
+}
+
+.dashboard .apps-container {
+  align-items: stretch;
+}
