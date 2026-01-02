@@ -42,6 +42,27 @@
         <div id="time-text" class="time-text"></div>
       </div>
     
+      
+      <!-- PASSWORD -->
+      <div class="password-generator">
+        <h2>Generador de contraseñas</h2>
+        
+        <label>Longitud
+          <input id="length" type="number" min="4" max="50" value="12" />
+        </label>
+        
+        <label><input id="uppercase" type="checkbox" checked /> Mayúsculas</label>
+        <label><input id="lowercase" type="checkbox" checked /> Minúsculas</label>
+        <label><input id="numbers" type="checkbox" checked /> Números</label>
+        <label><input id="symbols" type="checkbox" checked /> Símbolos</label>
+        
+        <button id="generate">Generar</button>
+        
+        <div class="result-box">  
+          <span id="result">— — — —</span>
+        </div>
+      </div>  
+      
       <!-- LINKS -->
       <div class="info-container" id="info-container">
         <div class="links-app">
@@ -58,26 +79,6 @@
       
         <div id="time-text" class="time-text"></div>
       </div>
-    
-      <!-- PASSWORD -->
-      <div class="password-generator">
-        <h2>Generador de contraseñas</h2>
-    
-        <label>Longitud
-          <input id="length" type="number" min="4" max="50" value="12" />
-        </label>
-    
-        <label><input id="uppercase" type="checkbox" checked /> Mayúsculas</label>
-        <label><input id="lowercase" type="checkbox" checked /> Minúsculas</label>
-        <label><input id="numbers" type="checkbox" checked /> Números</label>
-        <label><input id="symbols" type="checkbox" checked /> Símbolos</label>
-    
-        <button id="generate">Generar</button>
-    
-        <div class="result-box">  
-          <span id="result">— — — —</span>
-        </div>
-      </div>  
     </div>
   
   
